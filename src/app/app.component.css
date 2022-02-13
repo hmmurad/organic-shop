@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+.container {
+  width: 1820px;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* todo:Figma Link */
+/* https://www.figma.com/file/dGnV13M0DEXrcPYbpzgsjL/Bengal-Shop?node-id=2%3A1740 */
+
+/* .searchArea input:focus {
+  border: 0px solid #fff;
+  outline: none;
+} */
