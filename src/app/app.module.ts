@@ -6,10 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeaderComponent],
-  imports: [BrowserModule, CommonModule, AppRoutingModule],
+  imports: [BrowserModule, CommonModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

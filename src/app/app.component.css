@@ -16,3 +16,16 @@
   border: 0px solid #fff;
   outline: none;
 } */
+
+.relative {
+  position: relative;
+}
+.active::before {
+  content: "";
+  border-bottom: 5px solid green;
+  width: 42px;
+  position: absolute;
+  padding: 10px;
+  bottom: -12px;
+  left: 0px;
+}
