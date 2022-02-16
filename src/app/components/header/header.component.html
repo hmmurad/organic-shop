@@ -1,13 +1,101 @@
-<div class="bg-orange-600 text-gray-300 py-3">
-  <div class="container flex justify-between">
-    <div>
-      <a routerLink="/" class="text-sm"> OShop </a>
+<div class="container pt-6">
+  <!-- !Header Top -->
+  <div class="header_top flex justify-between items-center">
+    <!-- log -->
+    <div class="logo">
+      <a href="#" class="flex items-center text-gray-900 hover:text-gray-900">
+        <img src="../assets/images/logo.png" class="w-16 h-16" alt="" />
+        <h2 class="leading-10 ms-2 antialiased text-teat-600 text-4xl">
+          Organic Shop
+        </h2>
+      </a>
     </div>
-    <div class="mx-auto">
-      <p>Organic shop</p>
+    <!-- search -->
+    <div
+      class="searchArea flex justify-center items-center border border-gray-100 rounded-full"
+    >
+      <div class="px-3 pointer-events-none">
+        <img src="../assets/images/search.png" alt="" />
+      </div>
+      <input
+        type="text"
+        placeholder="Search here ..."
+        class="focus:outline-none px-3 border-0"
+      />
+      <button class="bg-gray-900 text-gray-300 py-2 px-4 rounded-full">
+        Search
+      </button>
     </div>
-    <div class="mx-auto">
-      <a routerLink="/cart"> Cart </a>
+    <!-- profile -->
+    <div class="profile flex items-center space-x-2">
+      <a
+        href=""
+        class="flex items-center justify-center rounded-full w-12 h-12 hover:bg-gray-200"
+      >
+        <img src="../assets/images/heart.png" alt="" />
+      </a>
+      <a
+        href=""
+        class="flex items-center justify-center rounded-full w-12 h-12 hover:bg-gray-200 mx-1 relative"
+      >
+        <img src="../assets/images/u_shopping-bag.png" alt="" />
+        <span
+          class="cartNumber bg-red-500 px-2 absolute -top-3 text-white -right-1 rounded-full w-4 font-medium"
+          >2</span
+        >
+      </a>
+      <a
+        href=""
+        class="flex items-center justify-center rounded-full w-12 h-12 hover:bg-gray-200"
+      >
+        <img src="../assets/images/user.png" alt="" />
+      </a>
+      <a href="" class="text-gray-900 hover:no-underline">Account</a>
+    </div>
+  </div>
+  <!-- !menuArea -->
+  <div class="flex justify-between items-center py-2 mt-3">
+    <div class="w-1/3">
+      <div ngbDropdown class="d-inline-block">
+        <button
+          class="bg-green-600 z-20 relative rounded-full w-96 flex justify-between items-center px-3 py-2 text-white font-medium"
+          id="dropdownBasic1"
+          ngbDropdownToggle
+        >
+          <img src="../assets/images/menu-right.png" alt="" />
+          All Categories
+        </button>
+        <div
+          ngbDropdownMenu
+          aria-labelledby="dropdownBasic1"
+          class="bg-green-600 text-white w-full z-10 -mt-6 rounded-b-xl pt-8 pb-4 absolute"
+        >
+          <ul>
+            <li><a href="/" class="py-4 px-4 hover:text-black">Fruits</a></li>
+            <li>
+              <a href="/" class="py-4 px-4 hover:text-black">Vegetables</a>
+            </li>
+            <li><a href="/" class="py-4 px-4 hover:text-black">Meat</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="menu w-auto flex items-center justify-center space-x-5 relative text-gray-900 text-xl"
+    >
+      <a routerLink="/" class="active">Home</a>
+      <a routerLink="/shop" lass="">Shop</a>
+      <a href="#" class="">Contact</a>
+      <a href="#" class="">About Us</a>
+    </div>
+    <div class="min-w-max">
+      <a
+        href="#"
+        class="flex items-center space-x-2 text-orange-500 font-semibold"
+      >
+        <img src="../assets/images/u_percentage.png" alt="" />
+        Special Offers
+      </a>
     </div>
   </div>
 </div>

@@ -1,16 +1,38 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './pages/home/home.component';
-import { HeaderComponent } from './components/header/header.component';
-import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { FeatureComponent } from './components/feature/feature.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { SearchCategoryComponent } from './components/search-category/search-category.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ShopComponent } from './pages/shop/shop.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent],
-  imports: [BrowserModule, CommonModule, AppRoutingModule, NgbModule],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    HeroComponent,
+    SearchCategoryComponent,
+    FeatureComponent,
+    ShopComponent,
+  ],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    AppRoutingModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    CarouselModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

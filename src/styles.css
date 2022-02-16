@@ -1,13 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @import "tailwind/base";
-@import "tailwind/components";
-@import "tailwind/utilities"; */
 
 * {
   box-sizing: border-box;
@@ -17,4 +14,103 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1820px;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.relative {
+  position: relative;
+}
+.active::before {
+  content: "";
+  border-bottom: 5px solid green;
+  width: 42px;
+  position: absolute;
+  padding: 10px;
+  bottom: -12px;
+  left: 0px;
+}
+.secTitle::before {
+  content: "";
+  border-bottom: 5px solid rgb(84, 165, 84);
+  width: 42px;
+  position: absolute;
+  padding: 10px;
+  bottom: -1px;
+  left: 0px;
+}
+
+.cartNumber {
+  padding: 2px 17px;
+  border-radius: 40px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.categoryTitle,
+.dealsTitle {
+  border-bottom: 2px solid rgb(194, 189, 189);
+}
+
+.promoBg {
+  background-image: url();
+}
+/* todo: carousel */
+.carousel-control-prev {
+  top: -58px;
+  left: 1435px;
+  /* height: 264px; */
+  width: 50px;
+}
+.carousel-control-next {
+  top: -58px;
+  right: 0px;
+  /* height: 264px; */
+  width: 50px;
+}
+.carousel-item.active > span.sr-only {
+  text-indent: -999999;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  transition: opacity 0.15s ease;
+  height: 35px;
+  border-radius: 100%;
+  width: 35px;
+  text-indent: -9999px;
+
+  background: #babebe;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 18px;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background: #17aa79;
+}
+
+.carousel-indicators {
+  display: none !important;
+  left: -34444444px;
 }

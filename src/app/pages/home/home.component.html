@@ -1,1 +1,846 @@
-<p>home works!</p>
+<!-- !heroSection -->
+<app-hero></app-hero>
+<div class="container">
+  <!-- !SearchByCategory -->
+  <app-search-category></app-search-category>
+  <!-- !promoArea -->
+  <app-feature></app-feature>
+
+  <!-- !DealsOFTheWeekArea -->
+  <!-- categoryTitle w-full border-b-1 border-gray-300 relative my-3 -->
+
+  <div class="deals">
+    <div class="dealsTitle w-full border-b-1 border-gray-300 relative my-3">
+      <h2 class="text-3xl font-bold secTitle pb-2">Deals of the Week</h2>
+    </div>
+    <ngb-carousel>
+      <!-- TODO : 1 -->
+      <ng-template ngbSlide>
+        <div class="flex justify-between items-center py-8 space-x-5">
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/meat.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/3.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/meat.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/2.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/3.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <!-- TODO : 1 -->
+      <ng-template ngbSlide>
+        <div class="flex justify-between items-center py-8 space-x-5">
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/meat.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/3.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/meat.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/2.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/3.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <!-- TODO : 1 -->
+      <ng-template ngbSlide>
+        <div class="flex justify-between items-center py-8 space-x-5">
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/meat.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/3.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/meat.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/2.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+          <!-- !Single Product -->
+          <div class="group">
+            <div class="relative group">
+              <div>
+                <img
+                  src="../assets/images/deals/3.png"
+                  class="rounded-md"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden group-hover:flex transition delay-700 absolute w-full h-full top-0 left-0 justify-center items-center"
+              >
+                <div
+                  class="bg-gray-700 opacity-60 absolute h-full w-full rounded-md"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex justify-center items-center space-x-4 font-semibold"
+                  >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      -
+                    </button>
+                    <span
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 bg-gray-100 text-green-600 flex justify-center items-center font-semibold"
+                      >1</span
+                    >
+                    <button
+                      class="rounded-full w-12 h-12 text-center border border-gray-300 text-white"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center space-y-3 py-4"
+            >
+              <span class="text-orange-600 text-sm">stars</span>
+              <h2 class="text-xl text-gray-900 font-bold">product name</h2>
+              <p class="text-base font-medium">
+                <strong class="text-gray-900 px-3">220</strong>
+                <span class="text-gray-300 line-through">3434</span>
+              </p>
+              <button
+                class="border border-gray-200 rounded-full w-full text-green-600 font-medium py-2 group-hover:bg-green-600 group-hover:text-gray-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+      <!-- ! END CAROUSEL -->
+    </ngb-carousel>
+  </div>
+</div>
