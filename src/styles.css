@@ -114,3 +114,30 @@ body {
   display: none !important;
   left: -34444444px;
 }
+/*  */
+.owl-nav {
+  position: absolute;
+  top: -48px;
+  transform: translate(-25px, -25px);
+  right: -28px;
+  transition: all 0.3s ease;
+}
+
+.owl-prev:hover {
+  background: rgb(68, 134, 68);
+}
+.owl-prev {
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-next:hover {
+  background: rgb(68, 134, 68);
+}
+.owl-next {
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

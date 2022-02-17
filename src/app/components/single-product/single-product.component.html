@@ -1,0 +1,84 @@
+<!-- TODO: productByCategory -->
+<section class="mb-4">
+  <div class="categoryTitle w-full border-b-1 border-gray-300 relative mb-3">
+    <h2 class="text-3xl font-bold secTitle pb-2">Product By Category</h2>
+  </div>
+  <div class="">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let p of dynamicSlides">
+        <div class="group mx-3 -translate-x-3">
+          <div class="relative rounded-r-md">
+            <div>
+              <img src="{{ p.src }}" alt="" />
+            </div>
+            <!-- ! hover Area -->
+            <div
+              class="absolute top-0 left-0 w-full h-full justify-center items-center hidden group-hover:flex"
+            >
+              <div
+                class="bg-black opacity-60 w-full h-full absolute rounded-md"
+              ></div>
+
+              <button
+                class="absolute left-0 bottom-0 p-2 bg-gray-200 w-full text-gray-400 flex justify-center items-center"
+              >
+                Details
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ms-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </button>
+              <div class="relative space-y-4">
+                <div
+                  class="text-white text-xl flex justify-center items-center space-x-3 mb-8"
+                >
+                  <button class="rounded-full border-2 border-white w-12 h-12">
+                    -
+                  </button>
+                  <p
+                    class="border-2 border-white bg-white flex justify-center items-center w-12 h-12 text-green-600 rounded-full"
+                  >
+                    3
+                  </p>
+                  <button
+                    class="rounded-full border-2 border-gray-200 w-12 h-12"
+                  >
+                    +
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="rounded-full bg-green-500 py-2 px-8 text-gray-100 inline-block text-center"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- ! hover Area end -->
+          </div>
+
+          <div class="text-center space-y-2 px-3">
+            <p class="text-sm text-gray-400 font-medium">Category Name</p>
+            <p class="text-base text-orange-500 font-serif">stars</p>
+            <h2 class="text-xl text-gray-900 font-bold">Product Name</h2>
+            <p class="text-base font-bold">
+              <strong class="text-gray-900">$25</strong> &nbsp;
+              <span class="text-gray-300 line-through">$35</span>
+            </p>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>

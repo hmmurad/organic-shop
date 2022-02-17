@@ -1,0 +1,14 @@
+<section class="popularBrands mb-3">
+  <div class="categoryTitle w-full border-b-1 border-gray-300 relative mb-3">
+    <h2 class="text-3xl font-bold secTitle pb-2">Popular Brands</h2>
+  </div>
+  <div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let brand of dynamicSlides">
+        <div class="w-full">
+          <img src="{{ brand.src }}" alt="Brands" />
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>

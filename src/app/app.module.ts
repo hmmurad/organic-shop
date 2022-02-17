@@ -11,8 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { SearchCategoryComponent } from './components/search-category/search-category.component';
+import { SingleProductComponent } from './components/single-product/single-product.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { PopularBrandsComponent } from './components/popular-brands/popular-brands.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { ShopComponent } from './pages/shop/shop.component';
     SearchCategoryComponent,
     FeatureComponent,
     ShopComponent,
+    SingleProductComponent,
+    PopularBrandsComponent,
   ],
   imports: [
+    NgbModule,
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     AppRoutingModule,
-    NgbModule,
-    BrowserAnimationsModule,
     CarouselModule,
   ],
   providers: [],
